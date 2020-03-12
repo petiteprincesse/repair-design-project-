@@ -363,7 +363,8 @@ img {
   .section-title {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Yeseva One', cursive; }
+    font-family: 'Yeseva One', cursive;
+    font-size: 0.95rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -521,7 +522,7 @@ img {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
 
 .card__title {
-  margin-top: 0;
+  margin-top: 0.4rem;
   margin-bottom: 0.7rem;
   font-family: 'Yeseva One', cursive;
   font-size: 1.29rem; }
@@ -544,6 +545,22 @@ img {
   text-transform: uppercase;
   background-color: #E3B873;
   color: #fff; }
+
+.section-description {
+  text-align: center; }
+  .section-description__text {
+    font-size: 1.43rem;
+    line-height: 1.93rem;
+    color: #363636;
+    max-width: 52.93rem;
+    margin-bottom: 3rem; }
+
+.design__section-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0; }
 
 @media screen and (max-width: 1280px) {
   .logo {
@@ -572,6 +589,8 @@ img {
     flex-direction: column;
     align-items: center; }
   .types__card {
+    margin-bottom: 5rem; }
+  .design__card {
     margin-bottom: 5rem; }
   .card__text {
     margin-left: 0; } }
