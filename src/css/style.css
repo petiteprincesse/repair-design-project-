@@ -655,6 +655,23 @@ img {
   .modal__button {
     align-self: flex-end; }
 
+.scrollup {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  right: 10%;
+  bottom: 3%; }
+  .scrollup--visibility {
+    opacity: 1;
+    visibility: visible; }
+  .scrollup__button {
+    outline: 0;
+    background: url("../img/arrow-up.svg") no-repeat center;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer; }
+
 @media screen and (max-width: 1280px) {
   .logo {
     margin-right: 1.5rem; } }

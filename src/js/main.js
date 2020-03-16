@@ -27,4 +27,16 @@ $(document).ready(function() {
   closeBtn.on('click', function() {
     modal.toggleClass('modal--visible'); 
   });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.scrollup').toggleClass('.scrollup--visibility').fadeIn('slow'); 
+    } else {
+      $('.scrollup').toggleClass('.scrollup--visibility').fadeOut('slow');
+    }
+  });
+  $('.scrollup').click(function() {
+    $('html, body').animate({scrollTop: 0}, 700);
+    return false;
+  });
 });
