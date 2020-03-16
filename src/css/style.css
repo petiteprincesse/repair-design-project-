@@ -386,6 +386,17 @@ template {
   max-width: 1256px;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 30%; }
+
+.col-50 {
+  width: 50%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -401,11 +412,44 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section--dark {
+    background-color: #131313;
+    color: #fff; }
   .section-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive;
-    font-size: 0.95rem; }
+    text-align: center; }
+    .section-title--left {
+      text-align: left; }
+    .section-title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive;
+      font-size: 1.43rem;
+      line-height: 138%;
+      margin: 1rem 0; }
+      .section-title__heading--primary {
+        font-size: 1.76rem;
+        font-weight: 500;
+        color: #E3B873;
+        margin: 1.54rem 0; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        width: 90px;
+        height: 1px;
+        background-color: #E3B873;
+        margin-left: 2.5rem; }
+    .section-title__text {
+      font-size: 1.43rem;
+      line-height: 1.93rem;
+      color: #363636;
+      max-width: 52.93rem;
+      margin-bottom: 3rem; }
+      .section-title__text--left {
+        font-size: 1.28rem;
+        line-height: 2.07rem;
+        max-width: 31rem;
+        color: #fff; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -471,6 +515,15 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3.46rem;
+    background-color: #131313; }
   .hero__content {
     position: relative;
     max-width: 47.85rem;
@@ -492,6 +545,7 @@ img {
     height: 100%; }
   .hero__scroll-down {
     position: absolute;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -499,6 +553,8 @@ img {
     bottom: 0;
     min-width: 17.6rem;
     min-height: 6.92rem;
+    font-family: 'Yeseva One', cursive;
+    font-size: 0.87rem;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
@@ -542,16 +598,48 @@ img {
   .title--primary {
     color: #E3B873; }
 
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem;
+    padding-bottom: 2rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #fff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  background: url("../img/arrow-prev.svg") no-repeat center;
+  margin-left: 0; }
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0; }
+
 .types__section-title {
   margin-bottom: 2rem; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 32%; }
 
 .card__text {
   position: relative;
@@ -587,21 +675,13 @@ img {
   background-color: #E3B873;
   color: #fff; }
 
-.section-description {
-  text-align: center; }
-  .section-description__text {
-    font-size: 1.43rem;
-    line-height: 1.93rem;
-    color: #363636;
-    max-width: 52.93rem;
-    margin-bottom: 3rem; }
-
-.design__section-description {
+.design__description {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-top: 2.7rem; }
 
 .modal {
   opacity: 0;
