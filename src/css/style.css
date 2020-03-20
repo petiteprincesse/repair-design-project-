@@ -899,7 +899,20 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .section-title {
+    text-align: center; }
+    .section-title__word {
+      display: flex;
+      justify-content: center; }
+      .section-title__word::after {
+        display: none; }
+  .col-50 {
+    width: 80vw; }
+  .steps {
+    display: none; }
+  .col-30 {
+    width: 100%; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
