@@ -160,4 +160,7 @@ mySwiper3.on("slideChange", function() {
   $(activeSlide).removeClass("inactive");
   $(prevSlide).addClass("inactive");
 });
+
+new WOW().init();
+
 });
