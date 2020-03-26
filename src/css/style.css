@@ -481,7 +481,11 @@ img {
       font-size: 1.43rem;
       line-height: 1.93rem;
       max-width: 31rem; }
-      .section-title__s-text--left {
+    .section-title__c-text {
+      font-size: 1.43rem;
+      line-height: 1.93rem;
+      max-width: 23rem; }
+      .section-title__c-text--left {
         font-size: 1.28rem;
         line-height: 2.07rem;
         max-width: 31rem;
@@ -963,6 +967,96 @@ img {
     background-color: #E3B873;
     color: #fff; }
 
+.customers {
+  margin-top: 2rem;
+  margin-bottom: 28rem; }
+  .customers__description {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem; }
+  .customers__gallery {
+    display: flex;
+    justify-content: space-between;
+    text-align: center; }
+  .customers__card {
+    margin: 0;
+    margin-right: 3.8rem; }
+
+.card__content {
+  position: relative;
+  margin: 0;
+  padding: 1rem 2rem 1rem 1.5rem;
+  background-color: #fff;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04); }
+
+.card__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20.86rem; }
+
+.card__gloss {
+  width: 23.5rem;
+  text-align: start;
+  font-size: 1.07rem;
+  line-height: 180%; }
+
+.card__info {
+  position: absolute;
+  left: 0;
+  bottom: -3rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #E3B873;
+  text-transform: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 21rem; }
+
+.info__square {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.214rem; }
+  .info__square::after {
+    position: absolute;
+    top: -0.78rem;
+    right: -1.5rem;
+    content: '';
+    width: 1px;
+    height: 167%;
+    background-color: #fff; }
+
+.info__time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.214rem;
+  padding-right: 0.7rem; }
+
+.square__emblem {
+  margin-right: 1rem; }
+
+.time__emblem {
+  margin-right: 1rem; }
+
+.title__photo {
+  margin-right: 1.7rem; }
+
+.title__image {
+  max-width: 5.43rem;
+  max-height: 5.43rem;
+  border-radius: 50rem; }
+
+.title__name {
+  width: 14.07rem;
+  font-size: 1.29rem;
+  line-height: 1.63rem;
+  text-align: start; }
+
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem; }
@@ -970,6 +1064,7 @@ img {
     background-color: #181818;
     max-width: 63.07rem;
     margin: auto;
+    margin-top: -18.6rem;
     margin-bottom: 3.714rem;
     padding: 2.5rem; }
   .footer__title {
