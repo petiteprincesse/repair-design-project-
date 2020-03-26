@@ -175,11 +175,13 @@ $(document).ready(function() {
 
   $(".modal__form").validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       // строчное правило
       userName: {
         required: true,
-        minlength: 2
+        minlength: 2,
+        maxlength: 15
       },
       userPhone: "required",
       // правило-объект (блок)
@@ -190,16 +192,70 @@ $(document).ready(function() {
     }, // сообщения
     messages: {
       userName: {
-        required: "Имя обязательно",
-        minlength: "Имя не должно быть короче двух букв"
+        required: "Заполните имя",
+        minlength: "Имя не должно быть короче двух букв",
+        maxlength: "Имя не должно быть длинее пятнадцати букв"
       },
-      userPhone: "Телефон обязателен",
+      userPhone: "Заполните телефон",
       userEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формате: name@domain.com"
       }
     }
   });
+
+  $(".control__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+    }, 
+    messages: {
+      userName: {
+        required: "Заполните имя",
+        minlength: "Имя не должно быть короче двух букв",
+        maxlength: "Имя не должно быть длинее пятнадцати букв"
+      },
+      userPhone: "Заполните телефон",
+    }
+  });
+
+  $(".footer__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      userQuestion: {
+        required: true,
+        minlength: 10,
+        maxlength: 30
+      }
+    }, 
+    messages: {
+      userName: {
+        required: "Заполните имя",
+        minlength: "Имя не должно быть короче двух букв",
+        maxlength: "Имя не должно быть длинее пятнадцати букв"
+      },
+      userPhone: "Заполните телефон",
+      userQuestion: {
+        required: "Введите вопрос",
+        minlength: "Вопрос должен содержать не менее 10 букв",
+        maxlength: "Вопрос должен содержать не более 30 букв"
+      }
+    }
+  });
+
 
   $('[type=tel]').mask('+7 (000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
   

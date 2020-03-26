@@ -41,14 +41,18 @@
           <h1 class="title hero__title wow fadeInRight" data-wow-delay="0.2s">Турецкий ремонт
             в&nbsp;<span class="title--primary">Ростове-на-Дону</span>
           </h1>
-          <p class="hero__text wow fadeInRight" data-wow-delay="0.4s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от
+          <p class="hero__text wow fadeInRight" data-wow-delay="0.4s">Получите готовый ремонт под ключ в срок с
+            экономией рабочего времени до 45 дней и 20% от
             стоимости материалов за счет организации работы
           </p>
-          <button class="button hero__button button--primary wow fadeInRight" data-toggle="modal" data-wow-delay="0.6s">Рассчитать стоимость</button>
-          <button class="button hero__button button--outline wow fadeInRight" data-wow-delay="0.6s">Отправить заявку</button>
+          <button class="button hero__button button--b-primary wow fadeInRight" data-toggle="modal"
+            data-wow-delay="0.6s">Рассчитать стоимость</button>
+          <button class="button hero__button button--outline wow fadeInRight" data-toggle="modal" data-wow-delay="0.6s">Отправить
+            заявку</button>
         </div>
       </div>
-      <a href="#" class="scroll-down hero__scroll-down wow bounce" data-wow-iteration="2" data-wow-delay="3s">Листайте вниз</a>
+      <a href="#" class="scroll-down hero__scroll-down wow bounce" data-wow-iteration="2" data-wow-delay="3s">Листайте
+        вниз</a>
     </section>
     <section class="section section--dark projects">
       <div class="container">
@@ -154,24 +158,26 @@
           <img src="img/play-icon.svg" alt="play-icon" class="video__play">
         </div>
         <p class="control__text">
-          На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. 
-          В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. 
-          Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы 
+          На каждом объекте установлена ​​камера, которая транслирует ход работы на часах.
+          В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире.
+          Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы
           получить ссылку на трансляцию.
         </p>
         <form action="#" class="form control__form">
           <div class="control__input-group">
-            <label for="user-name" class="label form__label control__label">Имя</label>
-            <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+            <label for="user-name" class="label form__label control__label label--dark">Имя</label>
+            <input type="text" name="userName" class="input form__input control__input input--dark" id="user-name" placeholder="Как вас зовут:">
           </div>
           <div class="control__input-group">
-            <label for="user-phone" class="label form__label control__label">Телефон</label>
-            <input type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+            <label for="user-phone" class="label form__label control__label label--dark">Телефон</label>
+            <input type="tel" name="userPhone" class="input form__input control__input input--dark" id="user-phone"
+              placeholder="Ваш номер телефона:">
           </div>
           <button class="button button--primary control__button">Отправить</button>
           <div class="policy control__policy">
             <input type="checkbox" name="policy-checkbox" class="policy__checkbox" id="policy-checkbox" checked>
-            <label for="policy-checkbox" class="policy__label  control__policy-label">я соглашаюсь с обработкой данных</label>
+            <label for="policy-checkbox" class="policy__label  control__policy-label">я соглашаюсь с обработкой
+              данных</label>
           </div>
         </form>
       </div>
@@ -494,22 +500,31 @@
         <form action="#" class="form footer__form">
           <div class="input-group footer__input-group">
             <label for="user-name" class="label form__label label--light">Имя</label>
-            <input type="text" class="input form__input footer__input input--light" id="user-name" placeholder="Как вас зовут:">  
+            <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name"
+              placeholder="Как вас зовут:">
           </div>
           <div class="input-group footer__input-group">
             <label for="user-phone" class="label form__label label--light">Телефон</label>
-            <input type="tel" class="input form__input footer__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+            <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="user-phone"
+              placeholder="Ваш номер телефона:">
           </div>
           <div class="input-group footer__input-group footer__input-group--full-width">
             <label for="user-question" class="label form__label label--light">Вопрос</label>
-            <input type="text" class="input form__input footer__input input--light" id="user-question" placeholder="Я хочу спросить:">
+            <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="user-question"
+              placeholder="Я хочу спросить:">
           </div>
           <div class="policy footer__policy">
             <input type="checkbox" name="policy-checkbox" class="policy__checkbox" id="policy-checkbox" checked>
-            <label for="policy-checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
+            <label for="policy-checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой
+              данных</label>
           </div>
           <button class="button button--primary footer__button">Отправить</button>
         </form>
+      </div>
+      <div class="map footer__map">
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4693bc6dd5050135b627d67bb99bf986b3968086ff83477c30f28fd30d004275&amp;width=925&amp;height=465&amp;lang=ru_RU&amp;scroll=true">
+        </script>
       </div>
     </div>
     <div class="footer__menu">
@@ -539,15 +554,18 @@
       <form action="#" class="form modal__form">
         <div class="input-group modal__input-group">
           <label for="user-name" class="label form__label label--light">Имя</label>
-          <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
+          <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name"
+            placeholder="Как вас зовут:">
         </div>
         <div class="input-group modal__input-group">
           <label for="user-phone" class="label form__label label--light">Телефон</label>
-          <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+          <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="user-phone"
+            placeholder="Ваш номер телефона:">
         </div>
         <div class="input-group modal__input-group">
           <label for="user-email" class="label form__label label--light">Email</label>
-          <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email:">
+          <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email"
+            placeholder="Ваш email:">
         </div>
         <div class="policy modal__policy">
           <input type="checkbox" name="policy-checkbox" class="policy__checkbox" id="policy-checkbox" checked>
@@ -568,6 +586,8 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
 </body>
 
 </html>
