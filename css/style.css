@@ -477,6 +477,11 @@ img {
       color: #363636;
       max-width: 52.93rem;
       margin-bottom: 3rem; }
+      .section-title__text--left {
+        font-size: 1.28rem;
+        line-height: 2.07rem;
+        max-width: 31rem;
+        color: #fff; }
     .section-title__s-text {
       font-size: 1.43rem;
       line-height: 1.93rem;
@@ -485,11 +490,6 @@ img {
       font-size: 1.43rem;
       line-height: 1.93rem;
       max-width: 23rem; }
-      .section-title__c-text--left {
-        font-size: 1.28rem;
-        line-height: 2.07rem;
-        max-width: 31rem;
-        color: #fff; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -924,6 +924,9 @@ img {
     max-height: 356px; }
   .card__text {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 16.6rem;
     margin-top: -6rem;
     margin-left: 1.43rem;
@@ -935,16 +938,16 @@ img {
     text-align: center;
     padding: 0;
     margin-top: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1.28rem;
     font-family: 'Yeseva One', cursive; }
   .card__gloss {
     display: block;
     text-align: center;
-    font-size: 1.25rem;
-    line-height: 1.79rem;
+    font-size: 1.28rem;
+    line-height: 1.09rem;
     color: #959595;
     margin: 0;
-    margin-bottom: 3.32rem; }
+    margin-bottom: 4.1rem; }
   .card__experience {
     position: absolute;
     display: block;
@@ -979,11 +982,11 @@ img {
     justify-content: space-between;
     text-align: center; }
   .customers__card {
-    margin: 0;
-    margin-right: 3.8rem; }
+    margin: 0 auto; }
 
 .card__content {
   position: relative;
+  max-width: 26vw;
   margin: 0;
   padding: 1rem 2rem 1rem 1.5rem;
   background-color: #fff;
@@ -993,10 +996,9 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 20.86rem; }
+  max-width: 22vh; }
 
-.card__gloss {
-  width: 23.5rem;
+.card__c-gloss {
   text-align: start;
   font-size: 1.07rem;
   line-height: 180%; }
@@ -1065,7 +1067,7 @@ img {
     max-width: 63.07rem;
     margin: auto;
     margin-top: -18.6rem;
-    margin-bottom: 3.714rem;
+    margin-bottom: 2.2rem;
     padding: 2.5rem; }
   .footer__title {
     text-transform: uppercase;
@@ -1100,7 +1102,47 @@ img {
     background-color: #131313;
     padding: 4.285rem 0; }
   .footer__map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 4rem; }
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .address__text {
+    font-family: Yeseva One, cursive;
+    font-size: 1.43rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    max-width: 37rem;
+    margin-bottom: 1.7rem; }
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.1rem; }
+  .links__mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: #E3B873;
+    border-radius: 50px;
+    margin-right: 1.2rem; }
+  .links__inst {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: #E3B873;
+    border-radius: 50px; }
 
 .modal {
   opacity: 0;

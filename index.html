@@ -164,7 +164,7 @@
           Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы
           получить ссылку на трансляцию.
         </p>
-        <form action="#" class="form control__form">
+        <form action="send.php" method="POST" class="form control__form">
           <div class="control__input-group">
             <label for="user-name" class="label form__label control__label label--dark">Имя</label>
             <input type="text" name="userName" class="input form__input control__input input--dark" id="user-name"
@@ -574,7 +574,7 @@
                 </div>
                 <h3 class="title__name">Савельева Екатерина Львовна</h3>
               </div>
-              <p class="card__gloss">Я хочу поблагодарить ребят за их работу. 
+              <p class="card__c-gloss">Я хочу поблагодарить ребят за их работу. 
                 Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. 
                 Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. 
                 Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. 
@@ -600,7 +600,7 @@
                 </div>
                 <h3 class="title__name">Большов Михаил Анатольевич</h3>
               </div>
-              <p class="card__gloss">Я хочу поблагодарить ребят за их работу. 
+              <p class="card__c-gloss">Я хочу поблагодарить ребят за их работу. 
                 Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. 
                 Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. 
                 Процecс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. 
@@ -626,7 +626,7 @@
                 </div>
                 <h3 class="title__name">Хасанов Даниил Муратович</h3>
               </div>
-              <p class="card__gloss">Я хочу поблагодарить ребят за их работу. 
+              <p class="card__c-gloss">Я хочу поблагодарить ребят за их работу. 
                 Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. 
                 Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. 
                 Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. 
@@ -652,7 +652,7 @@
     <div class="container">
       <div class="footer__wrap">
         <h3 class="footer__title">Остались вопросы?</h3>
-        <form action="#" class="form footer__form">
+        <form action="send.php" method="POST" class="form footer__form">
           <div class="input-group footer__input-group">
             <label for="user-name" class="label form__label label--light">Имя</label>
             <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name"
@@ -675,6 +675,20 @@
           </div>
           <button class="button button--primary footer__button">Отправить</button>
         </form>
+      </div>
+      <div class="footer-address address">
+        <p class="address__text">
+          Ростов на дону, Торговый центр Plaza
+          Прямой телефон +7 (999) 768 32 99 
+        </p>
+        <div class="footer-links links">
+          <a href="https://mail.yandex.ru/?uid=19447495#compose/171981210770218853" class="links__mail">
+            <img src="./img/camera.svg" alt="конвертик">
+          </a>
+          <a href="https://www.instagram.com/dimonbogdanov" class="links__inst">
+            <img src="./img/mail.svg" alt="фотоаппарат">
+          </a>
+        </div>
       </div>
       <div class="map footer__map">
         <script type="text/javascript" charset="utf-8" async
@@ -706,7 +720,7 @@
     <div class="modal__dialog">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
-      <form action="#" class="form modal__form">
+      <form action="send.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
           <label for="user-name" class="label form__label label--light">Имя</label>
           <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name"
