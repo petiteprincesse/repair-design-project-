@@ -44,31 +44,6 @@ $(document).ready(function() {
     return false;
   });
 
-  /*
-  var mySwiper = new Swiper ('.swiper-container', {
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination-bull',
-      type: 'bullets',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
-
-  next.css('left', prev.width() + 30 + bullets.width() + 20);
-  bullets.css('left', prev.width() + 30);
-  */
-
   var mySwiper = new Swiper(".swiper-1", {
     loop: true,
 
@@ -201,6 +176,22 @@ $(document).ready(function() {
         required: "Обязательно укажите email",
         email: "Введите в формате: name@domain.com"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с Вами через 10 минут');
+          $(form)[0].reset();
+          modal.removeClass("modal--visible");
+        },
+        error: function (response) {
+          console.error('Ошибка запроса: ' + response);
+        }
+      });
     }
   });
 
@@ -222,6 +213,22 @@ $(document).ready(function() {
         maxlength: "Имя не должно быть длинее пятнадцати букв"
       },
       userPhone: "Заполните телефон",
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с Вами через 10 минут');
+          $(form)[0].reset();
+          modal.removeClass("modal--visible");
+        },
+        error: function (response) {
+          console.error('Ошибка запроса: ' + response);
+        }
+      });
     }
   });
 
@@ -253,9 +260,24 @@ $(document).ready(function() {
         minlength: "Вопрос должен содержать не менее 10 букв",
         maxlength: "Вопрос должен содержать не более 30 букв"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с Вами через 10 минут');
+          $(form)[0].reset();
+          modal.removeClass("modal--visible");
+        },
+        error: function (response) {
+          console.error('Ошибка запроса: ' + response);
+        }
+      });
     }
   });
-
 
   $('[type=tel]').mask('+7 (000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
   
